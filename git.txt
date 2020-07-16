@@ -1,0 +1,54 @@
+Git Minimal configuration
+- username
+-user email
+
+$ git config --global user.name "Ketan"
+$ git config --global user.email "ketanbhikadiya9@gmail.com"
+
+cd C:/Python_SPark/Deploy_ML_Model/deployML_Local_Environment/
+
+
+--create a new repository
+$ git init ml_predict_salary_july_2020
+
+-- observe that we are now into "master" branch in the repository
+Ketan.Bhikadiya@91ISDL035219 MINGW64 /c/Python_SPark/Deploy_ML_Model
+$ cd ml_predict_salary_july_2020/
+
+Ketan.Bhikadiya@91ISDL035219 MINGW64 /c/Python_SPark/Deploy_ML_Model/ml_predict_salary_july_2020 (master)
+
+---there are no file and folder except ".git" default dir
+
+
+1. working directory
+2. staging area
+3. repository (.git folder)
+
+file moved from 1 to 3 thru 2.
+
+these all are local repository.
+
+4th step is rempte step(cloud) : it has its own 3 stage but people call it 4th stage.
+
+
+
+--lets add some file into git repo.
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+# make noepad++ default text editor for git
+$ git config --global core.editor "notepad++ -multiInst -nosession"
+
+
+#just to see if git has notepad++ its defaul text editor by opening git's own config file
+$ git config --global -e
+
+
+#open file using notepad++
+$ notepad++ README.md
+
+
