@@ -39,16 +39,68 @@ On branch master
 No commits yet
 
 nothing to commit (create/copy files and use "git add" to track)
-
-# make noepad++ default text editor for git
+-- make noepad++ default text editor for git
 $ git config --global core.editor "notepad++ -multiInst -nosession"
 
 
-#just to see if git has notepad++ its defaul text editor by opening git's own config file
+--just to see if git has notepad++ its defaul text editor by opening git's own config file
 $ git config --global -e
 
 
-#open file using notepad++
+--open file using notepad++
 $ notepad++ README.md
+
+
+--lets check the git status
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+        git.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+--add file to git staging area
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git.txt
+
+
+--not lets commit
+Ketan.Bhikadiya@91ISDL035219 MINGW64 /c/Python_SPark/Deploy_ML_Model/ml_predict_salary_july_2020 (master)
+$ git commit -m "this is a commit message. this is a first commint by ketan"
+[master (root-commit) c2a910d] this is a commit message. this is a first commint by ketan
+ 1 file changed, 3 insertions(+)
+ create mode 100644 README.md
+
+Ketan.Bhikadiya@91ISDL035219 MINGW64 /c/Python_SPark/Deploy_ML_Model/ml_predict_salary_july_2020 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+--$ ls -al
+#this returns all files including hidden
+
+
+
 
 
