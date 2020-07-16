@@ -101,4 +101,14 @@ nothing added to commit but untracked files present (use "git add" to track)
 #this returns all files including hidden
 
 
-#
+
+$ git commit -a -m "commit message"
+
+
+--update readme file
+
+1. basically open a file with notepad++   [$ notepad++ README.md]
+2. check git status
+3. add the file to git stagin area from its working area  [git add .]
+4. git status
+5. commit file to repo [$ git commit -a -m "commit message"]
