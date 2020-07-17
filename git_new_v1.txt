@@ -297,21 +297,40 @@ Everything up-to-date
 
 
 
+---------------------------------------------
+Python application
+
+By GitHub Actions
+
+Create and test a Python application.
+Python application logo
+python -m pip install --upgrade pip
+pip install flake8 pytest
+if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+
+    - name: Test with pytest
+      run: |
+        pip install pytest
+        pytest
 
 
 
+--once the CI process is done...build process is done.
 
+generate the Heroku token. on CLI
+(base) C:\WINDOWS\system32>heroku login
+heroku: Press any key to open up the browser to login or q to exit:
+Opening browser to https://cli-auth.heroku.com/auth/cli/browser/7a4b67ac-025e-4d2a-9ed0-53d0eb161a2a
+Logging in... done
+Logged in as ketanbhikadiya9@gmail.com
 
-
-
-
-
-
-
-
-
-
-
-
-
+(base) C:\WINDOWS\system32>heroku authorizations:create
+Creating OAuth Authorization... done
+Client:      <none>
+ID:          1a054ee7-5ba7-49e1-802c-6780afeb8985
+Description: Long-lived user authorization
+Scope:       global
+Token:       bda67e32-5696-4e83-8a89-16638e1ef5fe
+Updated at:  Fri Jul 17 2020 04:47:57 GMT-0600 (Mountain Daylight Time) (less than a minute ago)
 
